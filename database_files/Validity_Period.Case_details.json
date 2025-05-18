@@ -1,0 +1,637 @@
+[{
+  "_id": {
+    "$oid": "67e384f7aaaba50292fda827"
+  },
+  "case_id": 2,
+  "incident_id": 2001,
+  "account_no": 123456789,
+  "customer_ref": "CUST-REF-001",
+  "created_dtm": {
+    "$date": "2025-01-01T10:00:00.000Z"
+  },
+  "implemented_dtm": {
+    "$date": "2025-01-02T12:00:00.000Z"
+  },
+  "area": "Galle",
+  "rtom": "GL",
+  "arrears_band": "AB-25_50",
+  "bss_arrears_amount": 1500.5,
+  "current_arrears_amount": 1250.75,
+  "current_arrears_band": "AB-25_50",
+  "action_type": "Recovery",
+  "drc_commision_rule": "BB",
+  "last_payment_date": {
+    "$date": "2024-12-20T00:00:00.000Z"
+  },
+  "monitor_months": 6,
+  "last_bss_reading_date": {
+    "$date": "2024-12-18T00:00:00.000Z"
+  },
+  "commission": 10.5,
+  "case_current_status": "Open No Agent",
+  "filtered_reason": null,
+  "contact": [
+    {
+      "mob": "1234567890",
+      "email": "customer@example.com",
+      "lan": "123-456",
+      "address": "123 Main Street, Cityville"
+    }
+  ],
+  "remark": [
+    {
+      "remark": "Initial case setup.",
+      "remark_added_by": "admin",
+      "remark_added_date": {
+        "$date": "2025-01-01T11:00:00.000Z"
+      }
+    },
+    {
+      "remark": "kyjtfyiktf",
+      "remark_added_by": "kaml",
+      "remark_added_date": {
+        "$date": "2025-02-06T23:05:00.096Z"
+      }
+    },
+    {
+      "remark": "kuyhghu",
+      "remark_added_by": "kaml",
+      "remark_added_date": {
+        "$date": "2025-02-06T23:07:48.218Z"
+      }
+    },
+    {
+      "remark": "cccccccccc",
+      "remark_added_by": "kaml",
+      "remark_added_date": {
+        "$date": "2025-02-06T23:09:51.568Z"
+      }
+    },
+    {
+      "remark": "avadssssss",
+      "remark_added_by": "kaml",
+      "remark_added_date": {
+        "$date": "2025-02-07T06:03:34.003Z"
+      }
+    }
+  ],
+  "approve": [
+    {
+      "approved_process": "Case Approval",
+      "approved_by": "manager",
+      "approved_on": {
+        "$date": "2025-01-02T10:00:00.000Z"
+      },
+      "remark": "Approved for recovery process."
+    }
+  ],
+  "case_status": [
+    {
+      "case_status": "Open No Agent",
+      "status_reason": "Pending customer contact",
+      "created_dtm": {
+        "$date": "2025-01-01T10:30:00.000Z"
+      },
+      "created_by": "admin",
+      "notified_dtm": {
+        "$date": "2025-01-01T10:45:00.000Z"
+      },
+      "expire_dtm": {
+        "$date": "2025-01-15T00:00:00.000Z"
+      }
+    }
+  ],
+  "drc": [
+    {
+      "order_id": 1,
+      "drc_id": 7,
+      "drc_name": "DRC A",
+      "created_dtm": {
+        "$date": "2025-01-03T09:30:00.000Z"
+      },
+      "drc_status": "Active",
+      "status_dtm": {
+        "$date": "2025-01-01T09:45:00.000Z"
+      },
+      "expire_dtm": {
+        "$date": "2025-06-01T00:00:00.000Z"
+      },
+      "case_removal_remark": "N/A",
+      "removed_by": "admin",
+      "removed_dtm": {
+        "$date": "2025-02-07T06:36:23.181Z"
+      },
+      "drc_selection_logic": "Auto-Assign",
+      "case_distribution_batch_id": 10,
+      "recovery_officers": [
+        {
+          "ro_id": 1,
+          "assigned_dtm": {
+            "$date": "2025-02-02T14:59:04.206Z"
+          },
+          "assigned_by": "System",
+          "removed_dtm": null,
+          "case_removal_remark": null
+        }
+      ]
+    },
+    {
+      "order_id": 2,
+      "drc_id": 8,
+      "drc_name": "Galle Recovery Services",
+      "created_dtm": {
+        "$date": "2025-05-01T10:00:00.000Z"
+      },
+      "drc_status": "Active",
+      "status_dtm": {
+        "$date": "2025-05-01T10:15:00.000Z"
+      },
+      "expire_dtm": {
+        "$date": "2025-11-01T00:00:00.000Z"
+      },
+      "case_removal_remark": "N/A",
+      "removed_by": null,
+      "removed_dtm": null,
+      "drc_selection_logic": "Auto-Assign",
+      "case_distribution_batch_id": 11,
+      "recovery_officers": [
+        {
+          "ro_id": 2,
+          "assigned_dtm": {
+            "$date": "2025-05-01T11:00:00.000Z"
+          },
+          "assigned_by": "System",
+          "removed_dtm": null,
+          "case_removal_remark": null
+        }
+      ]
+    },
+    {
+      "order_id": 3,
+      "drc_id": 9,
+      "drc_name": "Southern Debt Solutions",
+      "created_dtm": {
+        "$date": "2025-05-10T09:00:00.000Z"
+      },
+      "drc_status": "Active",
+      "status_dtm": {
+        "$date": "2025-05-10T09:15:00.000Z"
+      },
+      "expire_dtm": {
+        "$date": "2025-11-10T00:00:00.000Z"
+      },
+      "case_removal_remark": "N/A",
+      "removed_by": null,
+      "removed_dtm": null,
+      "drc_selection_logic": "Auto-Assign",
+      "case_distribution_batch_id": 12,
+      "recovery_officers": [
+        {
+          "ro_id": 3,
+          "assigned_dtm": {
+            "$date": "2025-05-10T10:00:00.000Z"
+          },
+          "assigned_by": "System",
+          "removed_dtm": null,
+          "case_removal_remark": null
+        }
+      ]
+    }
+  ],
+  "abnormal_stop": [
+    {
+      "remark": "Abnormal case stop due to inactivity.",
+      "done_by": "admin",
+      "done_on": {
+        "$date": "2025-01-03T15:00:00.000Z"
+      },
+      "action": "Suspend"
+    }
+  ],
+  "updatedAt": {
+    "$date": "2025-02-12T13:08:58.180Z"
+  },
+  "__v": 14,
+  "case_nego": [
+    {
+      "negotiation": "fail",
+      "ro_request": "task_with_slt",
+      "negotiation_remarks": "rtyh",
+      "settlement_plan": null,
+      "phase": null,
+      "settlement_count": null,
+      "initial_amount": null,
+      "calender_month": null,
+      "duration_from": null,
+      "duration_to": null,
+      "remark": null,
+      "_id": {
+        "$oid": "67a5a9e7b3539d8cc96dba74"
+      }
+    },
+    {
+      "negotiation": "fail",
+      "ro_request": "task_with_slt",
+      "negotiation_remarks": "uyttt",
+      "settlement_plan": null,
+      "phase": null,
+      "settlement_count": null,
+      "initial_amount": null,
+      "calender_month": null,
+      "duration_from": null,
+      "duration_to": null,
+      "remark": null,
+      "_id": {
+        "$oid": "67a5b617b3539d8cc96dba83"
+      }
+    },
+    {
+      "negotiation": "Agree",
+      "ro_request": "task_with_slt",
+      "negotiation_remarks": "uytttqqq",
+      "settlement_plan": "plan2",
+      "phase": "negos",
+      "settlement_count": "4",
+      "initial_amount": null,
+      "calender_month": 4,
+      "duration_from": {
+        "$date": "2025-02-13T00:00:00.000Z"
+      },
+      "duration_to": {
+        "$date": "2025-02-04T00:00:00.000Z"
+      },
+      "remark": "finniren",
+      "_id": {
+        "$oid": "67a5b6a1b3539d8cc96dba8a"
+      }
+    },
+    {
+      "negotiation": "Agree",
+      "ro_request": "task_with_slt",
+      "negotiation_remarks": "uytttqqq",
+      "settlement_plan": "plan2",
+      "phase": "negos",
+      "settlement_count": "4",
+      "initial_amount": null,
+      "calender_month": 4,
+      "duration_from": {
+        "$date": "2025-02-13T00:00:00.000Z"
+      },
+      "duration_to": {
+        "$date": "2025-02-04T00:00:00.000Z"
+      },
+      "remark": "finniren",
+      "_id": {
+        "$oid": "67a5b6a5b3539d8cc96dba8e"
+      }
+    },
+    {
+      "negotiation": "Agree",
+      "ro_request": "task_with_slt",
+      "negotiation_remarks": "uytttqqq",
+      "settlement_plan": "plan2",
+      "phase": "negos",
+      "settlement_count": "4",
+      "initial_amount": null,
+      "calender_month": 4,
+      "duration_from": {
+        "$date": "2025-02-13T00:00:00.000Z"
+      },
+      "duration_to": {
+        "$date": "2025-02-04T00:00:00.000Z"
+      },
+      "remark": "finniren",
+      "_id": {
+        "$oid": "67a5b6b0b3539d8cc96dba95"
+      }
+    },
+    {
+      "negotiation": "Agree",
+      "ro_request": "task_with_slt",
+      "negotiation_remarks": "uytttqqq",
+      "settlement_plan": "plan2",
+      "phase": "negos",
+      "settlement_count": "4",
+      "initial_amount": null,
+      "calender_month": 4,
+      "duration_from": {
+        "$date": "2025-02-13T00:00:00.000Z"
+      },
+      "duration_to": {
+        "$date": "2025-02-04T00:00:00.000Z"
+      },
+      "remark": "finniren",
+      "_id": {
+        "$oid": "67a5b6c6b3539d8cc96dba9d"
+      }
+    },
+    {
+      "negotiation": "Agree",
+      "ro_request": "task_with_slt",
+      "negotiation_remarks": "uytttqqq",
+      "settlement_plan": "plan2",
+      "phase": "negos",
+      "settlement_count": "4",
+      "initial_amount": null,
+      "calender_month": 4,
+      "duration_from": {
+        "$date": "2025-02-13T00:00:00.000Z"
+      },
+      "duration_to": {
+        "$date": "2025-02-04T00:00:00.000Z"
+      },
+      "remark": "finniren",
+      "_id": {
+        "$oid": "67a5b710b3539d8cc96dbaa6"
+      }
+    },
+    {
+      "negotiation": "Agree",
+      "ro_request": "task_with_slt",
+      "negotiation_remarks": "yeviin",
+      "settlement_plan": "plan2",
+      "phase": "6",
+      "settlement_count": "5",
+      "initial_amount": "4000",
+      "calender_month": -4,
+      "duration_from": {
+        "$date": "2025-02-28T00:00:00.000Z"
+      },
+      "duration_to": {
+        "$date": "2025-02-04T00:00:00.000Z"
+      },
+      "remark": "yevin",
+      "_id": {
+        "$oid": "67a5b74ab3539d8cc96dbab3"
+      }
+    },
+    {
+      "negotiation": "field",
+      "ro_request": "task_with_slt",
+      "negotiation_remarks": "nrtnrrbr",
+      "settlement_plan": null,
+      "phase": null,
+      "settlement_count": null,
+      "initial_amount": null,
+      "calender_month": 3,
+      "duration_from": {
+        "$date": "2025-03-01T00:00:00.000Z"
+      },
+      "duration_to": {
+        "$date": "2025-06-30T00:00:00.000Z"
+      },
+      "remark": null,
+      "_id": {
+        "$oid": "67ac971d874a5be37f2bf4d0"
+      }
+    },
+    {
+      "negotiation": "field",
+      "ro_request": "task_with_slt",
+      "negotiation_remarks": "nrtnrrbr",
+      "settlement_plan": null,
+      "phase": null,
+      "settlement_count": null,
+      "initial_amount": null,
+      "calender_month": 3,
+      "duration_from": {
+        "$date": "2025-03-01T00:00:00.000Z"
+      },
+      "duration_to": {
+        "$date": "2025-06-30T00:00:00.000Z"
+      },
+      "remark": null,
+      "_id": {
+        "$oid": "67ac9726874a5be37f2bf4dc"
+      }
+    },
+    {
+      "negotiation": "field",
+      "ro_request": "task_with_slt",
+      "negotiation_remarks": " dvwv v",
+      "settlement_plan": null,
+      "phase": null,
+      "settlement_count": null,
+      "initial_amount": null,
+      "calender_month": 3,
+      "duration_from": {
+        "$date": "2025-03-01T00:00:00.000Z"
+      },
+      "duration_to": {
+        "$date": "2025-06-30T00:00:00.000Z"
+      },
+      "remark": null,
+      "_id": {
+        "$oid": "67ac99f3874a5be37f2bf4ff"
+      }
+    },
+    {
+      "negotiation": "field",
+      "ro_request": "task_with_slt",
+      "negotiation_remarks": "fff",
+      "settlement_plan": null,
+      "phase": null,
+      "settlement_count": null,
+      "initial_amount": null,
+      "calender_month": 3,
+      "duration_from": {
+        "$date": "2025-03-01T00:00:00.000Z"
+      },
+      "duration_to": {
+        "$date": "2025-06-30T00:00:00.000Z"
+      },
+      "remark": null,
+      "_id": {
+        "$oid": "67ac9b44874a5be37f2bf50f"
+      }
+    },
+    {
+      "negotiation": "field",
+      "ro_request": "task_with_slt",
+      "negotiation_remarks": "oiuytrew",
+      "settlement_plan": null,
+      "phase": null,
+      "settlement_count": null,
+      "initial_amount": null,
+      "calender_month": 3,
+      "duration_from": {
+        "$date": "2025-03-01T00:00:00.000Z"
+      },
+      "duration_to": {
+        "$date": "2025-06-30T00:00:00.000Z"
+      },
+      "remark": null,
+      "_id": {
+        "$oid": "67ac9c32874a5be37f2bf520"
+      }
+    },
+    {
+      "negotiation": "field",
+      "ro_request": "task_with_slt",
+      "negotiation_remarks": "d3d3d",
+      "settlement_plan": null,
+      "phase": null,
+      "settlement_count": null,
+      "initial_amount": null,
+      "calender_month": 3,
+      "duration_from": {
+        "$date": "2025-03-01T00:00:00.000Z"
+      },
+      "duration_to": {
+        "$date": "2025-06-30T00:00:00.000Z"
+      },
+      "remark": null,
+      "_id": {
+        "$oid": "67ac9d6a874a5be37f2bf537"
+      }
+    }
+  ],
+  "current_contact": [],
+  "ref_products": [],
+  "ro_edited_customer_details": [],
+  "ro_nagotiate_cp_collect": []
+},
+{
+  "_id": {
+    "$oid": "67e384f7aaaba50292fda829"
+  },
+  "case_id": 18,
+  "incident_id": 2001,
+  "account_no": 123456789,
+  "customer_ref": "CUST-REF-001",
+  "created_dtm": {
+    "$date": "2025-01-01T10:00:00.000Z"
+  },
+  "implemented_dtm": {
+    "$date": "2025-01-02T12:00:00.000Z"
+  },
+  "area": "Gampaha",
+  "rtom": "MH",
+  "arrears_band": "AB-25_50",
+  "bss_arrears_amount": 1500.5,
+  "current_arrears_amount": 1250.75,
+  "current_arrears_band": "AB-25_50",
+  "action_type": "Recovery",
+  "drc_commision_rule": "BB",
+  "last_payment_date": {
+    "$date": "2024-12-20T00:00:00.000Z"
+  },
+  "monitor_months": 6,
+  "last_bss_reading_date": {
+    "$date": "2024-12-18T00:00:00.000Z"
+  },
+  "commission": 10.5,
+  "case_current_status": "Open No Agent",
+  "filtered_reason": null,
+  "contact": [
+    {
+      "mob": "1234567890",
+      "email": "customer@example.com",
+      "lan": "123-456",
+      "address": "123 Main Street, Cityville"
+    }
+  ],
+  "remark": [
+    {
+      "remark": "Initial case setup.",
+      "remark_added_by": "admin",
+      "remark_added_date": {
+        "$date": "2025-01-01T11:00:00.000Z"
+      }
+    }
+  ],
+  "approve": [
+    {
+      "approved_process": "Case Approval",
+      "approved_by": "manager",
+      "approved_on": {
+        "$date": "2025-01-02T10:00:00.000Z"
+      },
+      "remark": "Approved for recovery process."
+    }
+  ],
+  "case_status": [
+    {
+      "case_status": "Inactive",
+      "status_reason": "Pending customer contact",
+      "created_dtm": {
+        "$date": "2025-01-01T10:30:00.000Z"
+      },
+      "created_by": "admin",
+      "notified_dtm": {
+        "$date": "2025-01-01T10:45:00.000Z"
+      },
+      "expire_dtm": {
+        "$date": "2025-01-15T00:00:00.000Z"
+      }
+    }
+  ],
+  "drc": [
+    {
+      "order_id": 1,
+      "drc_id": 5001,
+      "drc_name": "ABC Debt Recovery Services",
+      "created_dtm": {
+        "$date": "2025-01-01T09:30:00.000Z"
+      },
+      "drc_status": "Active",
+      "status_dtm": {
+        "$date": "2025-01-01T09:45:00.000Z"
+      },
+      "expire_dtm": null,
+      "case_removal_remark": "N/A",
+      "removed_by": "admin",
+      "removed_dtm": {
+        "$date": "2025-01-02T00:00:00.000Z"
+      },
+      "drc_selection_logic": "Auto-Assign",
+      "case_distribution_batch_id": 10,
+      "recovery_officers": [
+        {
+          "ro_id": 101,
+          "assigned_dtm": {
+            "$date": "2025-01-01T11:00:00.000Z"
+          },
+          "assigned_by": "supervisor",
+          "removed_dtm": {
+            "$date": "2025-01-23T01:57:36.210Z"
+          },
+          "case_removal_remark": null
+        },
+        {
+          "ro_id": 1,
+          "assigned_dtm": {
+            "$date": "2025-01-23T01:57:36.213Z"
+          },
+          "assigned_by": "System",
+          "removed_dtm": {
+            "$date": "2025-01-23T01:59:37.525Z"
+          },
+          "case_removal_remark": null
+        },
+        {
+          "ro_id": 1,
+          "assigned_dtm": {
+            "$date": "2025-01-23T01:59:37.525Z"
+          },
+          "assigned_by": "System",
+          "removed_dtm": null,
+          "case_removal_remark": null
+        }
+      ]
+    }
+  ],
+  "abnormal_stop": [
+    {
+      "remark": "Abnormal case stop due to inactivity.",
+      "done_by": "admin",
+      "done_on": {
+        "$date": "2025-01-03T15:00:00.000Z"
+      },
+      "action": "Suspend"
+    }
+  ],
+  "updatedAt": {
+    "$date": "2025-01-23T01:59:37.525Z"
+  }
+}]

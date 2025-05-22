@@ -1,0 +1,33 @@
+FUNCTION get_active_drc(drc_list, case_id):
+
+    IF drc_list is not a list:
+        LOG warning: "Invalid DRC list structure for case {case_id}"
+        RETURN NULL
+
+    CREATE empty list: active_drcs
+
+    FOR EACH drc IN drc_list:
+
+        IF drc is not a dictionary:
+            LOG warning: "Invalid DRC entry in case {case_id}"
+            CONTINUE
+
+        IF drc.drc_status != 'Active':
+            SKIP
+
+        GET order_id from drc
+
+        IF order_id is missing or not a number:
+            LOG warning: "Missing or invalid order_id in DRC {drc.get('drc_id')} for case {case_id}"
+            CONTINUE
+
+        ADD drc TO active_drcs
+
+    IF active_drcs is empty:
+        RETURN NULL
+
+    SORT active_drcs by order_id DESCENDING
+
+    RETURN first item in list
+
+END FUNCTION

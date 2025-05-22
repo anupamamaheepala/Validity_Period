@@ -1,0 +1,67 @@
+FUNCTION check_validity_and_alert():
+
+    CONNECT to MongoDB database
+
+    IF connection fails:
+        LOG error: "No active MongoDB connection"
+        RETURN
+
+    GET collection 'Case_details'
+
+    FIND all documents where drc.drc_status == 'Active'
+
+    SET current_time = NOW in UTC
+
+    FOR EACH case IN found_cases:
+
+        TRY:
+
+            GET case_id (default to 'Unknown Case')
+
+            GET drc_list from case (default to empty list)
+
+            IF drc_list is not a list:
+                LOG warning: "Invalid DRC list in case {case_id}"
+                CONTINUE
+
+            CALL active_drc = get_active_drc(drc_list, case_id)
+
+            IF active_drc is NULL:
+                LOG warning: "No active DRC for case {case_id}"
+                CONTINUE
+
+            GET drc_id from active_drc
+            GET order_id from active_drc
+            GET expire_dtm.$date from active_drc
+
+            IF drc_id is missing:
+                LOG warning: "Missing drc_id for DRC in case {case_id}"
+                CONTINUE
+
+            IF order_id is not a number:
+                LOG warning: "Missing or invalid order_id for DRC {drc_id} in case {case_id}"
+                CONTINUE
+
+            IF expire_dtm is missing or not valid ISO date:
+                LOG warning: "Missing or invalid expire_dtm for DRC {drc_id} in case {case_id}"
+                CONTINUE
+
+            PARSE expire_dtm into datetime object
+
+            CALCULATE time_to_expiry = expire_dtm - current_time
+
+            IF time_to_expiry <= 0:
+                LOG info: "DRC expired for case {case_id}. Directing to Letter of Demand."
+                UPDATE DRC status to "Expired"
+                SET current_status = "Direct to Letter of Demand"
+
+            ELSE IF time_to_expiry <= 3 days:
+                LOG info: "3-day expiry alert for case {case_id}"
+                UPDATE DRC status to "Last Alert Received"
+                SET current_status = NULL
+
+        CATCH any error during processing:
+            LOG full error details
+            CONTINUE
+
+END FUNCTION
